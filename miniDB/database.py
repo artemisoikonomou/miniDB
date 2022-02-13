@@ -25,7 +25,8 @@ class Database:
     def __init__(self, name, load=True):
         self.tables = {}
         self._name = name
-
+         # Γίνεται μια προσθήκη μεταβλητής για τον ελεγχο αν ζητείται DISTINC
+        self.distinccheck = False;
         self.savedir = f'dbdata/{name}_db'
 
         if load:
