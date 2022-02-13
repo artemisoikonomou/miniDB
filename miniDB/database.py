@@ -118,7 +118,7 @@ class Database:
         # (self.tables[name])
         print(f'Created table "{name}".')
 
-
+    #test of code
     def drop_table(self, table_name):
         '''
         Drop table from current database.
