@@ -127,6 +127,7 @@ class Database:
             table_name: string. Name of table.
         '''
         self.load_database()
+        
         self.lock_table(table_name)
 
         self.tables.pop(table_name)
